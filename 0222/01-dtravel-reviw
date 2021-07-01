@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>dtravel reviw</title>
+</head>
+
+<body>
+    <!-- Index(들여쓰기 : 4칸 기본,) -->
+    <!-- table 각 행의 넓이는 colgroup, col태그에서 설정한다 -->
+    <h1>D-travel review</h1>
+    <table border width="100%">
+        <colgroup>
+            <col width="25%">
+            <col width="25%">
+            <col width="25%">
+            <!-- <col> - 나머지 남는값이 자동으로 됨 -->
+        </colgroup>
+        <thead>
+            <tr>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- disable : 사용을 막는다, enable : 사용을 허용한다(default) -->
+    <input type="text" value="강현욱" disabled>
+    <br>
+    <!-- disable = 약관보는글..등 -->
+    <textarea name="article" id="article" cols="30" rows="10" disabled>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quia dolore esse impedit perspiciatis! Quibusdam mollitia quae explicabo perferendis earum ipsa aliquam eius nobis nihil odio, saepe, suscipit, culpa consequuntur.
+        Eum non nobis maxime corrupti, tenetur cumque molestias, a at fuga vel iure? Tenetur nisi sit ipsa minus quasi molestias quibusdam et ex non aut iste, quisquam placeat odio ratione.
+        Officia amet voluptates in, perferendis ipsa earum. Ex quibusdam dolorum, accusamus nisi sint, sit alias eveniet vero, aliquam quo omnis tempora illo assumenda vel fugit aliquid. Culpa ducimus ut voluptatibus?
+        Tenetur sapiente quae animi assumenda fugit natus, minima corporis eos obcaecati optio repellendus, enim error neque eligendi numquam mollitia aut! Nam totam quaerat quia dignissimos optio maxime distinctio unde architecto.
+        Sunt quidem eos quae necessitatibus asperiores dicta, fugiat eum ut similique quo! Non quod nemo nihil omnis. Molestias fugiat dolorum accusantium rerum totam alias eaque id, laborum quae dolore sit?
+    </textarea>
+    <br>
+    <input type="checkbox" disabled>
+    <br>
+    <!-- placehoder -->
+    <input type="text" placeholder="이름을 작성해주세요">
+    <!-- id, name, value -->
+    <!-- 
+        id는 해당 페이지 태그에 부여하는 주민번호와 같다
+        특성: 유일해야 한다, 어디에나 부여 가능하다
+        목적: 구분과 선택(CSS)
+    -->
+    <input type="text" value="강현욱" id="mamber-id">
+    <!-- 
+        name은 서버에 보낼때 사용하는 값의 이름(key)
+        ex: (알파카 : 안녕하세요)
+        {
+            key(이름) : value(값)
+        }
+     -->
+    <!-- value는 key에 대응하는 값이다 -->
+    <input type="text" value="강현욱" id="member-id" name="">
+    <select name="nationality" id="nationality">
+        <option value="">선택</option>
+        <option value="korea">한국</option>
+    </select>
+    <!-- ex -->
+    <label>여행지</label>
+    <input type="radio" name="tavel-spot" id="travel-spot" value="오류가날까">
+    <label for="gangreung">강릉</label>
+</body>
+
+</html>

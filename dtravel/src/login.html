@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Page</title>
+</head>
+
+<body>
+    <!-- Header 영역 -->
+    <header>
+        <hr>
+        <!-- 상위경로 ../ src 폴더 상위에 index.html 이 있으므로 ../-->
+        <a href="../index.html">D-TRAVEL</a>
+        <ul>
+            <li><a href="main.html">메인</a></li>
+            <li><a href="login.html">로그인</a></li>
+            <li><a href="sign-up.html">회원가입</a></li>
+            <li><a href="travel-info.html">상세정보</a></li>
+        </ul>
+        <hr>
+    </header>
+    <!-- Container, body 영역 -->
+    <section>
+        <h1>로그인 화면</h1>
+
+        <form action="./main.html">
+            <fieldset>
+                <legend>로그인</legend>
+                <p>
+                    <label for="meber-id">ID :</label>
+                    <input type="text" name="meber-id" id="member-id" required>
+                </p>
+                <p>
+                    <label for="member-pw">PW :</label>
+                    <input type="password" name="meber-pw" id="member-pw" required>
+                </p>
+                <button><a href="sign-up.html">회원가입</a></button>
+                <input type="submit" value="로그인">
+            </fieldset>
+        </form>
+
+    </section>
+    <!-- Footer 영역 -->
+    <footer>
+        <hr>
+        <address>
+            <p>Address : 대구광역시 중구 그린빌딩</p>
+            Tel :<a href="Tel : 054) 111-9121">054) 111-9121</a>
+            E-mail :<a href="hans.park.dev@dtravel.com">hans.park.dev@dtravel.com</a>
+            <br>
+            &copy; <b>All right reserve.</b>
+        </address>
+        <hr>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>join Company</title>
+</head>
+
+<body>
+    <style>
+        form {
+            width: 800px;
+        }
+    </style>
+    <form action="">
+        <fieldset>
+            <legend>입사지원 정보</legend>
+            <p>
+                <label for="email" -글자를 클릭해도 선택가능하게함>아이디(e-mail) :</label>
+                <input type="text">
+                <label>@</label>
+                <select name="adress" id="adress">
+                    <option value="select" -선택은 안적어도됨>선택</option>
+                    <option value="naver">naver.com</option>
+                    <option value="google">google.com</option>
+                </select>
+                <!-- <br> 대신 <p>로 처리 br은 텍스트 문단을 누눌때 쓰임-->
+            </p>
+            <p>
+                <label for="secret">비밀번호</label>
+                <input type="password">
+                <!-- <br> -->
+            </p>
+            <p>
+                <label for="phone_num">휴대전화 :</label>
+                <select name="phone" id="phone">
+                    <option value="select">통신사 선택</option>
+                    <option value="kt">KT</option>
+                    <option value="sk">SK</option>
+                    <option value="lg">LG</option>
+                </select>
+                <!-- value id 값은 절대로 대문자x!! -소문자가 기본 대문자는 긴문장일 경우cameCase 회사마다camel-case 로도 쓰임 -->
+                <input type="text" maxlength="3">-<input type="text" maxlength="4">-<input type="text" maxlength="4">
+                <!-- 기억이 안나면 input mdn 로 google 검색해보기 -->
+                <!-- <br> -->
+            </p>
+            <p>
+                <!-- <label for="job">직군 :</label> 밑에걸로 -->
+                <label>직군 :</label>
+                <!-- 직군: 이렇게만 넣어도 가능-->
+                <input type="radio" name="job" id="design"><label for="design">디자이너</label>
+                <input type="radio" name="job" id="dev"><label for="dev">개발자</label>
+                <!-- <br> -->
+            </p>
+            <p>
+                <!-- <label for="jobplace">희망 근무지 (*복수선택 가능)</label> 연결될게 없으니 for 무필요 밑에걸로 -->
+                <label>희망 근무지 (*복수선택 가능) :</label>
+                <input type="checkbox" name="company-place" id="la"><label for="la">LA</label>
+                <input type="checkbox" name="company-place" id="dokyo"><label for="dokyo">도쿄</label>
+                <input type="checkbox" name="company-place" id="london"><label for="london">런던</label>
+                <input type="checkbox" name="company-place" id="singapole"><label for="singapol">싱가폴</label>
+            </p>
+        </fieldset>
+        <!-- <br> -->
+        <!-- <input type="button" value="입사지원 완료">  form태그 아니라도 작동-->
+        <input type="submit" value="입사지원 완료">
+        <!-- form 태그 안에서만 작동한다 왜나면 type="submit" form태그안에서는 이걸로 하기 -->
+    </form>
+    <!-- control+shif+k 줄삭제 -->
+    <!-- 항상 인덴트-줄정리 잘하기-뭐가 자식이고 부모인지 나누었는지 -->
+</body>
+
+</html>

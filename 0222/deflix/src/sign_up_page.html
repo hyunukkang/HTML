@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign up page</title>
+</head>
+
+<body>
+    <header>
+        <hr>
+        <h1><a href="../index.html">DEFLIX</a></h1>
+        <h2>- <a href="login.html">로그인</a></h2>
+        <hr>
+    </header>
+
+    <section>
+        <form action="main.html">
+            <textarea name="access-terms" id="access-terms" cols="50" rows="20" disabled>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia odio exercitationem quas earum rerum iste commodi aliquam qui eos quos modi velit temporibus laboriosam, soluta sunt reiciendis corrupti libero repellendus.
+                Molestiae quae nemo exercitationem natus aliquid, vero quos error minima quaerat soluta quidem autem quia officiis unde deleniti reprehenderit illo. Fugit iure minus atque cumque voluptas voluptatibus eveniet, dolorum consectetur.
+                Obcaecati, sint suscipit? Recusandae doloremque quia fugit reiciendis, illum perferendis eos sequi labore ipsa ipsam debitis. Necessitatibus autem qui, explicabo sapiente voluptatibus odit facere consequatur laborum quia voluptates magnam nisi.
+                Nemo repellat illum provident, temporibus quae magnam atque. Labore voluptatem debitis ducimus nisi maiores quasi error perferendis id ad non dolorem, dolore eos aliquam fuga, vel animi odio? Illum, quisquam?
+                Nam, sed rem beatae vero eos quod ad repellat quas repudiandae sequi nemo totam, soluta dolor amet exercitationem dicta, alias laudantium aspernatur error temporibus expedita dolorem. Maiores enim culpa numquam.
+                Libero qui, laborum provident aliquam hic quos esse possimus id eum fugiat praesentium, aperiam corrupti alias quasi aut? Numquam non itaque corrupti velit laudantium quod sequi beatae optio ex at.
+                Esse ipsam harum non cum praesentium inventore eius. Porro assumenda molestias in deserunt impedit reprehenderit qui illum, natus sit dolorum animi beatae voluptatibus quod. Odio porro voluptas at reprehenderit maiores?
+                Voluptatibus culpa animi libero assumenda asperiores nobis impedit ad quis distinctio. Aliquid modi id consectetur quo assumenda iusto magni expedita corporis cum, possimus mollitia soluta fuga accusantium! Quibusdam, culpa placeat?
+                Tenetur amet expedita, ipsam doloremque, dignissimos distinctio illo eveniet repudiandae earum alias iste? Unde, provident error fugiat exercitationem aut repudiandae totam soluta esse eaque enim eius mollitia omnis iste? Placeat.
+                A illum ducimus perferendis exercitationem, consectetur fugiat blanditiis dolorum, accusantium enim error fugit harum aliquid praesentium quia tempora optio asperiores ullam ea dolorem aliquam maiores tempore amet. Maiores, voluptatum necessitatibus.
+            </textarea>
+            <br>
+            <input type="checkbox" required>
+            <label>디플릭스 이용약관 동의</label>
+            <fieldset>
+                <p>
+                    <label for="member-id">아이디: </label>
+                    <input type="text" name="member-id" id="member-id" required>
+                </p>
+                <p>
+                    <label for="member-pw">비밀번호: </label>
+                    <input type="password" name="member-pw" id="member-pw" required>
+                </p>
+                <p>
+                    <label for="member-pw-check">비밀번호 확인: </label>
+                    <input type="password" name="member-pw-check" id="member-pw-check" required>
+                </p>
+                <p>
+                    <label for="member-name">이름: </label>
+                    <input type="text" name="member-name" id="member-name" required>
+                </p>
+                <p>
+                    <label for="year-month">생년월일: </label>
+                    <input type="month" name="year-month" id="year-month">
+                    <input type="number" min="1" max="31">
+                </p>
+                <p>
+                    <label for="gender">성별: </label>
+                    <select name="gender" id="gender" required>
+                        <option value="">선택</option>
+                        <option value="male">남성</option>
+                        <option value="female">여성</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="mobile">전화번호: </label>
+                    <select name="mobile" id="mobile">
+                        <option value="">통신사 선택</option>
+                        <option value="sk">SK</option>
+                        <option value="kt">KT</option>
+                        <option value="lg">LG</option>
+                    </select>
+                    <input type="text" maxlength="3">
+                    <input type="text" maxlength="4">
+                    <input type="text" maxlength="4">
+                </p>
+                <input type="submit" value="가입완료">
+            </fieldset>
+        </form>
+    </section>
+</body>
+
+</html>

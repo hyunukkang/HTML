@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>외부 style 선언</title>
+    <!-- css 파일 링크를 이용 하는 방식 -->
+    <!-- 방법1 -->
+    <link rel="stylesheet" href="css/mian.css">
+    <link rel="stylesheet" href="./css/02-main.css">
+    <!-- 방법2 -->
+    <style>
+        @import url(./css/mian.css);
+        @import "css/mian.css";
+    </style>
+</head>
+
+<body>
+    <p>
+        hellow world~!
+    </p>
+
+</body>
+
+</html>

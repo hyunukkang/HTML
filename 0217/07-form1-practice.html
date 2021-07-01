@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>form1 practice</title>
+</head>
+
+<body>
+    <form action="" method="" enctype="">
+        <fieldset>
+            <legend>개인정보</legend>
+            <p>
+                <label for="name">이름 :</label>
+                <input type="text" id="name" required>
+            </p>
+            <p>
+                <label for="age">나이 :</label>
+                <input type="text" id="age" required>
+            </p>
+            <p>
+                <label>성별 :</label>
+                <input type="radio" id="female" name="gender" required>
+                <label for="female">여자</label>
+                <input type="radio" id="female" name="gender" required>
+                <label for="female">여자</label>
+            </p>
+
+            <p>
+                <label for="national">거주지:</label>
+                <select name="natonal" id="national">
+                    <option value="korea">선택하세요</option>
+                    <option value="korea">한국</option>
+                    <option value="korea">미국</option>
+                    <option value="korea">중국</option>
+                </select>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <p>
+                <label>취미 :</label>
+                <input type="checkbox" name="habbit" id="soccer"><label for="soccer">축구</label>
+                <input type="checkbox" name="habbit" id="baseball"><label for="baseball">야구</label>
+                <input type="checkbox" name="habbit" id="basketball"><label for="basketball">농구</label>
+
+            </p>
+            <p>
+                <label>특기 :</label>
+                <input type="checkbox" name="skill" id="cook"><label for="cook">요리</label>
+                <input type="checkbox" name="skill" id="game"><label for="game">게임</label>
+                <input type="checkbox" name="skill" id="draw"><label for="draw">그리기</label>
+            </p>
+            <p>
+                <label for="introduce">자기소개</label><br>
+                <textarea name="introduce" id="introduce" cols="30" rows="10"></textarea>
+            </p>
+
+        </fieldset>
+    </form>
+</body>
+
+</html>
